@@ -6,7 +6,7 @@ $(function() {
         $("div").animate({"height": "100px", "width": "100px", "margin-left": "100px"}, 3000, hideSquere); /*Funkcja click wywołuje animacje(zmiana wielkości i przesuniecie kwadratu)*/
         
      function hideSquere() {
-         $("div").animate({"margin-left": "0px"}).fadeOut(2500, changeColor); /*funkcja zmiany koloru, ktora dzieje się w funkcji click*/
+         $("div").animate({"margin-left": "0px"}).fadeOut(2000, changeColor); /*funkcja zmiany koloru, ktora dzieje się w funkcji click*/
      };
         function changeColor() {
             $("div").css({"background-color": "blue"}).fadeIn(5000,napis);/*funkcja powoduje zmiane koloru*/
