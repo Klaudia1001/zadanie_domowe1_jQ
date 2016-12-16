@@ -13,13 +13,13 @@ $(function() {
        function changeColor() {
             $("div").css({"background-color": "blue"},5000,napis)};/*funkcja powoduje zmiane koloru, napis się nie wyświetla*/
          
-         /*$("div").animate({"background-color": "blue"},5000,napis)}; /*napis się wyświetla, kolor się nei zmienia*/
+         /*$("div").animate({"background-color": "blue"},5000,napis)}; /*napis się wyświetla, kolor się nie zmienia*/
             
             function napis() {
                 $("div").add("h2").text("Gratulacje, animacja zakończona").css({"color": "black", "font-size" : "20px"});
             /*funkcja powoduje pojawienie się napisu wewnątrz kwadratu*/
             }
-        }
+        };
         
     });
 });
