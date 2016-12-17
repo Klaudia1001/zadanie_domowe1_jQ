@@ -11,9 +11,9 @@ $(function() {
          $("div").animate({"margin-left": "0px"},2000, changeColor); /*funkcja powrotu kwadratu na miejsce, ktora dzieje się w funkcji click*/
      
        function changeColor() {
-            $("div").css({"background-color": "blue"},5000,napis)};/*funkcja powoduje zmiane koloru, napis się nie wyświetla*/
+            $("div").css({"background-color": "blue"},5000,napis())};/*funkcja powoduje zmiane koloru i wyświetlenie się napisu; właściwości CSS to coś innego niż animate, dlatego funkcja się kończy napis()  */
          
-         /*$("div").animate({"background-color": "blue"},5000,napis)}; /*napis się wyświetla, kolor się nie zmienia*/
+        
             
             function napis() {
                 $("div").add("h2").text("Gratulacje, animacja zakończona").css({"color": "black", "font-size" : "20px"});
